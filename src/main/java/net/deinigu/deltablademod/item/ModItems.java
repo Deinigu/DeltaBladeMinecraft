@@ -14,6 +14,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> DELTA = ITEMS.register("delta", ()->new Item(new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB)));
     public static final RegistryObject<Item> BLADE = ITEMS.register("blade",()->new Item(new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB)));
+    public static final RegistryObject<Item> DELTABLADE = ITEMS.register("deltablade",()->new Item(new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

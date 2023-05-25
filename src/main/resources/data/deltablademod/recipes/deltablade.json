@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "  a",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "deltablademod:delta"
+    },
+    "a": {
+      "item": "deltablademod:blade"
+    }
+  },
+  "result": {
+    "item": "deltablademod:deltablade",
+    "count": 1
+  }
+}
