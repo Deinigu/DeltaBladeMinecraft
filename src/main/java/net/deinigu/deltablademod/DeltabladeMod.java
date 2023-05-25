@@ -1,6 +1,7 @@
 package net.deinigu.deltablademod;
 
 import com.mojang.logging.LogUtils;
+import net.deinigu.deltablademod.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -21,6 +22,8 @@ public class DeltabladeMod {
 
     public DeltabladeMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
