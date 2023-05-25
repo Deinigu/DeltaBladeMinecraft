@@ -7,7 +7,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab ITEMS_TAB = new CreativeModeTab("deltablademodtab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.DELTA.get());
+            return new ItemStack(ModItems.DELTABLADE.get());
         }
     };
 }

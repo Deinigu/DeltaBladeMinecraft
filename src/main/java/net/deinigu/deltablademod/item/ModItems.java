@@ -1,6 +1,7 @@
 package net.deinigu.deltablademod.item;
 
 import net.deinigu.deltablademod.DeltabladeMod;
+import net.deinigu.deltablademod.item.custom.DeltaBladeItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,7 +15,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> DELTA = ITEMS.register("delta", ()->new Item(new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB)));
     public static final RegistryObject<Item> BLADE = ITEMS.register("blade",()->new Item(new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB)));
-    public static final RegistryObject<Item> DELTABLADE = ITEMS.register("deltablade",()->new Item(new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB)));
+    public static final RegistryObject<Item> DELTABLADE = ITEMS.register("deltablade",()->new DeltaBladeItem(new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
