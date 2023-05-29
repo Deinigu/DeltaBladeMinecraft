@@ -19,9 +19,12 @@ public class DeltaBladeItem extends SwordItem {
 
     @Override
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
-        pTarget.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,10),pAttacker);
-        pTarget.addEffect(new MobEffectInstance(MobEffects.POISON,10),pAttacker);
-        pTarget.addEffect(new MobEffectInstance(MobEffects.CONFUSION,10),pAttacker);
+        pTarget.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,200),pAttacker);
+        pTarget.addEffect(new MobEffectInstance(MobEffects.BLINDNESS,200),pAttacker);
+        pTarget.addEffect(new MobEffectInstance(MobEffects.POISON,200),pAttacker);
+        pTarget.addEffect(new MobEffectInstance(MobEffects.CONFUSION,200),pAttacker);
+        pAttacker.addEffect(new MobEffectInstance(MobEffects.HEAL,20),pAttacker);
+
         return super.hurtEnemy(pStack,pTarget,pAttacker);
     }
 
