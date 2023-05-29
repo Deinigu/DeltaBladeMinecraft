@@ -1,5 +1,6 @@
 package net.deinigu.deltablademod.item.custom;
 
+import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -18,7 +19,9 @@ public class DeltaBladeItem extends SwordItem {
 
     @Override
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
-        pTarget.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,200),pAttacker);
+        pTarget.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,10),pAttacker);
+        pTarget.addEffect(new MobEffectInstance(MobEffects.POISON,10),pAttacker);
+        pTarget.addEffect(new MobEffectInstance(MobEffects.CONFUSION,10),pAttacker);
         return super.hurtEnemy(pStack,pTarget,pAttacker);
     }
 
