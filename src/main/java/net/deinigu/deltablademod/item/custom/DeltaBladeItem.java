@@ -55,7 +55,7 @@ public class DeltaBladeItem extends SwordItem {
     }
 
     protected static BlockHitResult rayTrace(Level level, Player player, ClipContext.Fluid fluidMode) {
-        double range = 15;
+        double range = 30;
 
         float f = player.getXRot();
         float f1 = player.getYRot();
@@ -75,7 +75,7 @@ public class DeltaBladeItem extends SwordItem {
     private void summonParticle(Level level, Player player) {
         for (int i = 0; i < 360; i++) {
             if (i % 10 == 0) {
-                level.addParticle(ParticleTypes.PORTAL, player.getX() + 0.5d, player.getY() + 1, player.getZ() + 0.5d, Math.cos(i) * 0.25d, 0.15d, Math.sin(i) * 0.25d);
+                level.addParticle(ParticleTypes.PORTAL, player.getX(), player.getY() + 0.5d, player.getZ(), Math.cos(i) * 0.25d, 0.15d, Math.sin(i) * 0.25d);
             }
         }
     }
