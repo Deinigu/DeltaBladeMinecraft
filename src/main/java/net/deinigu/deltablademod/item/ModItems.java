@@ -18,7 +18,7 @@ public class ModItems {
     public static final RegistryObject<Item> DELTA = ITEMS.register("delta", ()->new Item(new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB)));
     public static final RegistryObject<Item> BLADE = ITEMS.register("blade",()->new Item(new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB)));
     public static final RegistryObject<SwordItem> DELTABLADE = ITEMS.register("deltablade",()->new DeltaBladeItem(ModTiers.DELTATIER,12, -2.4f,new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB)));
-    public static final RegistryObject<SwordItem> ACTUALLY_BLADE = ITEMS.register("actually_blade",()->new ActuallyBladeItem(Tiers.IRON,1, 1.0f,new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB)));
+    public static final RegistryObject<SwordItem> ACTUALLY_BLADE = ITEMS.register("actually_blade",()->new ActuallyBladeItem(Tiers.IRON,1, -2.4f,new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
