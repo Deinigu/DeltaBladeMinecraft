@@ -16,6 +16,8 @@ public class ModSounds {
 
     public static final RegistryObject<SoundEvent> ACTUALLY_SOUND = registerSoundEvent("actually_sound");
 
+    public static final RegistryObject<SoundEvent> MUSIC_BOX = registerSoundEvent("music_box");
+
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         ResourceLocation id = new ResourceLocation(DeltabladeMod.MOD_ID, name);
         return SOUND_EVENTS.register(name, () -> new SoundEvent(id));

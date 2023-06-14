@@ -3,6 +3,9 @@
   "item.deltablademod.blade": "Blade",
   "item.deltablademod.deltablade": "DeltaBlade",
   "item.deltablademod.actually_blade": "ActuallyBlade",
+  "item.deltablademod.music_box_music_disc": "DeltaMusic",
+  "item.deltablademod.music_box_music_disc.desc": "Music for the DeltaBlades",
+
 
   "itemGroup.deltablademodtab": "The DeltaBlade Mod"
 }

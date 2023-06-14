@@ -4,5 +4,15 @@
     "sounds": [
       "deltablademod:actually_sound"
     ]
+  },
+
+  "music_box": {
+    "subtitle": "sounds.deltablademod.music_box",
+    "sounds": [
+      {
+        "name": "deltablademod:hijodelaluna",
+        "stream": true
+      }
+    ]
   }
 }
