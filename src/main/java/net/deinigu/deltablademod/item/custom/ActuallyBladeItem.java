@@ -1,7 +1,9 @@
 package net.deinigu.deltablademod.item.custom;
 
 import net.deinigu.deltablademod.particle.ModParticles;
+import net.deinigu.deltablademod.sound.ModSounds;
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -18,10 +20,12 @@ public class ActuallyBladeItem extends SwordItem {
 
     }
 
+
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
         if (pContext.getLevel().isClientSide()) {
             summonParticleIdle(pContext, pContext.getClickedPos());
+            pContext.getLevel().playSound(pContext.getPlayer(),pContext.getClickedPos(),ModSounds.ACTUALLY_SOUND.get(), SoundSource.BLOCKS, 1f,1f);
         }
         return super.useOn(pContext);
     }
