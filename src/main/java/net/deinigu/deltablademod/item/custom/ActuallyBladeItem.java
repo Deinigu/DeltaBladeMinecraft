@@ -25,7 +25,7 @@ public class ActuallyBladeItem extends SwordItem {
     public InteractionResult useOn(UseOnContext pContext) {
         if (pContext.getLevel().isClientSide()) {
             summonParticleIdle(pContext, pContext.getClickedPos());
-            pContext.getLevel().playSound(pContext.getPlayer(),pContext.getClickedPos(),ModSounds.ACTUALLY_SOUND.get(), SoundSource.BLOCKS, 1f,1f);
+            pContext.getLevel().playSound(pContext.getPlayer(), pContext.getClickedPos(), ModSounds.ACTUALLY_SOUND.get(), SoundSource.BLOCKS, 1f, 1f);
         }
         return super.useOn(pContext);
     }

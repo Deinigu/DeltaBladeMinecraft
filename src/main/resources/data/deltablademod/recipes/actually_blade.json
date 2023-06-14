@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:yellow_wool"
+    },
+    "b": {
+      "item": "minecraft:wooden_sword"
+    },
+    "c": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "result": {
+    "item": "deltablademod:actually_blade",
+    "count": 1
+  }
+}
