@@ -9,7 +9,7 @@ The DeltaBlade Minecraft mod takes you on a journey through the realms of Minecr
 - The Mighty DeltaBlade
 
   ![DeltaBlade sprite](https://github.com/Deinigu/DeltaBladeMinecraftMod/blob/main/src/main/resources/assets/deltablademod/textures/item/deltablade.png?raw=true)
-- The GoofyAss ActuallyBlade
+- The ActuallyBlade
   
   ![ActuallyBlade sprite](https://github.com/Deinigu/DeltaBladeMinecraftMod/blob/main/src/main/resources/assets/deltablademod/textures/item/actually_blade.png?raw=true)
 - One Easter Egg
