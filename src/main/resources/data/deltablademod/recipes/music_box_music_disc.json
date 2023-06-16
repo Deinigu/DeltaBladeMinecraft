@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb",
+    "a#b",
+    "bbb"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:blaze_powder"
+    },
+    "a": {
+      "item": "minecraft:writable_book"
+    },
+    "b": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "result": {
+    "item": "deltablademod:music_box_music_disc",
+    "count": 1
+  }
+}

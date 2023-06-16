@@ -23,7 +23,7 @@ public class ModItems {
     public static final RegistryObject<SwordItem> ACTUALLY_BLADE = ITEMS.register("actually_blade",()->new ActuallyBladeItem(Tiers.IRON,1, -2.4f,new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB)));
 
     public static final RegistryObject<RecordItem> MUSIC_BOX_MUSIC_DISC = ITEMS.register("music_box_music_disc",
-            () -> new RecordItem(8, ModSounds.MUSIC_BOX, new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB),5120));
+            () -> new RecordItem(8, ModSounds.MUSIC_BOX, new Item.Properties().tab(ModCreativeModeTab.ITEMS_TAB).stacksTo(1),5120));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

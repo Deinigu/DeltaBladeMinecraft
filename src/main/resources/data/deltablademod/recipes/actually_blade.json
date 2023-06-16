@@ -1,19 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "aaa",
+    " d ",
     "aba",
-    "aca"
+    " c "
   ],
   "key": {
     "a": {
-      "item": "minecraft:yellow_wool"
+      "item": "minecraft:glass_pane"
     },
     "b": {
-      "item": "minecraft:wooden_sword"
+      "item": "minecraft:golden_sword"
     },
     "c": {
-      "item": "minecraft:white_wool"
+      "item": "minecraft:bone"
+    },
+    "d": {
+      "item": "minecraft:light_weighted_pressure_plate"
     }
   },
   "result": {
