@@ -1,22 +1,25 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " d ",
+    "ede",
     "aba",
-    " c "
+    "ece"
   ],
   "key": {
     "a": {
       "item": "minecraft:glass_pane"
     },
     "b": {
-      "item": "minecraft:golden_sword"
+      "item": "minecraft:diamond_sword"
     },
     "c": {
       "item": "minecraft:bone"
     },
     "d": {
       "item": "minecraft:light_weighted_pressure_plate"
+    },
+    "e": {
+      "item": "minecraft:glod_block"
     }
   },
   "result": {
