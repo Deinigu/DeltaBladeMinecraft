@@ -2,7 +2,6 @@ package net.deinigu.deltablademod;
 
 import com.mojang.logging.LogUtils;
 import net.deinigu.deltablademod.item.ModItems;
-import net.deinigu.deltablademod.particle.ModParticles;
 import net.deinigu.deltablademod.sound.ModSounds;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
@@ -26,8 +25,6 @@ public class DeltabladeMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
-
-        ModParticles.register(modEventBus);
 
         ModSounds.register(modEventBus);
 

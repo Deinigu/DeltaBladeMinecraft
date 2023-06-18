@@ -2,8 +2,6 @@ package net.deinigu.deltablademod.event;
 
 import net.deinigu.deltablademod.DeltabladeMod;
 import net.deinigu.deltablademod.item.ModItems;
-import net.deinigu.deltablademod.particle.ModParticles;
-import net.deinigu.deltablademod.particle.custom.ActuallyParticles;
 import net.deinigu.deltablademod.sound.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.particles.ParticleTypes;
@@ -24,10 +22,5 @@ public class ModEvents {
     @Mod.EventBusSubscriber(modid = DeltabladeMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
     public class ModEventBusEvents {
 
-        @SubscribeEvent
-        public static void registerParticleFactories(final RegisterParticleProvidersEvent event) {
-            Minecraft.getInstance().particleEngine.register(ModParticles.ACTUALLY_PARTICLES.get(),
-                    ActuallyParticles.Provider::new);
-        }
     }
 }

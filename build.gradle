@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '1.19.2-0.2'
+version = '1.19.2-0.2-server_edition'
 group = 'net.deinigu.deltablademod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'deltablademod'
 
